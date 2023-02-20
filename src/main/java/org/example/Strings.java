@@ -27,13 +27,9 @@ public class Strings {
         String enteredPassword = input.nextLine();
 
         if (enteredUsername.equals(username) &&
-                enteredPassword.equals(password) && enteredPassword.length() < 15) {
+                enteredPassword.equals(password) && password.length() < 15) {
             String welcomeMessage = "Welcome, " + username.toUpperCase() + "!";
             System.out.println(welcomeMessage);
-<<<<<<< HEAD
-            System.out.println(enteredUsername.concat(enteredPassword).toLowerCase());
-=======
->>>>>>> origin/master
         } else {
             System.out.println("Access denied.");
         }
